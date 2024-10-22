@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ibrahim ouald chaib</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .form_button {
+            display: block;
+            margin-top: 15px;
+            background-color: rgb(79, 60, 96);
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="Ibrahim.ouald@educa.madrid.org">
+        <fieldset>
+            <legend>Personaje</legend>
+            <label>Superheroe favorito</label>
+            <input list="superheroes" name="superheroes">
+            <datalist id="superheroes">
+                <option value="iron man"></option>
+                <option value="the hulk"></option>
+                <option value="spiderman"></option>
+            </datalist>
+            <label>color</label>
+            <input type="color" name="color">
+        </fieldset>
+        <fieldset>
+            <legend>Datos</legend>
+            <label>Nombre</label>
+            <input type="text">
+            <label>Telefono</label>
+            <input type="number">
+        </fieldset>
+        <input type="submit">
+
+    </form>
+</body>
+
+</html>
