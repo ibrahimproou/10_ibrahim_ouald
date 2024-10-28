@@ -1,0 +1,35 @@
+h1{color: aqua;
+        
+}
+   h2 {color: blueviolet;
+}
+span{
+    font-weight: bolder;
+}
+
+.azul{
+        font-weight: bolder;
+        color: blue;
+
+    }
+h3{
+    font-style: italic;
+}
+#gris{
+    text-transform: uppercase;
+    color: grey;
+}
+.verde{
+    color: green;
+}
+.link{
+    font-weight: bolder;
+    color: blue;
+}
+.head{
+    font-weight: bolder;
+    color: blue;
+}
+.mihojacss{
+    color: red;
+}
