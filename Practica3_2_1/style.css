@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    background-color: purple;
+    justify-content: end;
+    flex-flow: row nowrap;
+    padding: 5px;
+
+}
+
+.caja {
+    background-color: orange;
+    margin: 5px;
+    padding: 5px;
+
+
+}
+
+.container2 {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    background-color: black;
+    padding: 5px;
+    width: 100px;
+}
+
+.container2 .caja {
+    background-color: orange;
+}
+
+#nav {
+    background-color: beige;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none
+}
+
+#nav ul li {
+    background-color: brown;
+    padding: 10px 15px;
+    border: 5px solid rgb(31, 29, 29);
+}
+
+#nav ul li:hover {
+    background-color: red;
+}
+
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
