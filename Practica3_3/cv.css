@@ -28,5 +28,17 @@ nav{
     color: white;
 }
 .knowledge{
+    justify-content: space-between;
+    display: grid;
     grid-template-columns: 50% 50%;
 }
+section:not(:last-child){
+    border-bottom: 1px solid gray ;
+}
+footer{
+    background-color: greenyellow;
+    min-height: 100px;
+    padding: 10px 10px;
+    text-align: end;
+}
+
