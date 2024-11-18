@@ -1,9 +1,18 @@
+body {
+    margin: 0%;
+}
+
+section {
+    padding: 15px;
+}
+
 header {
     color: white;
     padding: 2em;
     text-align: center;
     background-image: url('brme.png');
     background-size: cover;
+
 }
 
 header img {
@@ -11,34 +20,55 @@ header img {
     max-width: 200px;
 }
 
-h4{
+h4 {
     color: green;
 }
-li{
-        list-style-type: none;
-        font-family: 'Raleway';
-        font-size: 16px;
-        line-height: 1.8em;
-        
-        
+
+li {
+    list-style-type: none;
+    font-family: 'Raleway';
+    font-size: 16px;
+    line-height: 1.8em;
+
+
 }
-nav{
-    background-color: gray;
+
+nav ul {
     display: flex;
     color: white;
+    flex-flow: row nowrap;
+    justify-content:center;
+    gap: 15px;
+    background-color: green;
+    margin: 0%;
+    
+
 }
-.knowledge{
+
+.knowledge {
     justify-content: space-between;
     display: grid;
     grid-template-columns: 50% 50%;
 }
-section:not(:last-child){
-    border-bottom: 1px solid gray ;
+
+section:not(:last-child) {
+    border-bottom: 1px solid gray;
 }
-footer{
+
+footer {
     background-color: greenyellow;
     min-height: 100px;
     padding: 10px 10px;
     text-align: end;
 }
 
+nav ul li {
+    background-color: greenyellow;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    
+}
+.active{
+    background-color: white;
+}
