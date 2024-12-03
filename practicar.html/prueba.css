@@ -1,0 +1,9 @@
+ul{
+    list-style-type: none;
+}
+ul li:before{
+    content:"*";
+    padding: right 34
+    
+    px; 
+}

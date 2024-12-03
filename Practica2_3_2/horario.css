@@ -64,12 +64,10 @@ th{
 td.recreo:hover{
     background-color: blue;
 }
-#aula{
-    visibility: hidden;
-}
 
 td.servred:hover #aula{
     visibility: visible;
     display: block;
 }
+
 
