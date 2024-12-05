@@ -1,21 +1,27 @@
 function calcularNotaFinal() {
-    var notaPrimeraEv = document.getElementById("Nota_primera_ev").Value;
+    var notaPrimeraEv = document.getElementById("nota_primera_ev").value;
     console.log("Nota primer input: " + notaPrimeraEv);
-    var notaSegundaEv = document.getElementById("nota_segunda_ev").Value;
-    console.log("nota segundo input: " + notaSegundaEv);
-    var nombre = document.getElementById("nombre").Value;
+
+    var notaSegundaEv = document.getElementById("nota_segunda_ev").value;
+    console.log("Nota segundo input: " + notaSegundaEv);
+
+    var nombre = document.getElementById("nombre").value;
+
     var divResultado = document.getElementById("resultado");
-    var notaFinal = calcularMedia(notaPrimeraEv, notaSegundaEv);
-    console.log("nota media: " + notaFinal)
+
+    var notaFinal = calcularMedia(notaPrimeraEv, notaSegundaEv)
+    console.log("Nota media: " + notaFinal)
     if (notaFinal >= 5) {
+        divResultado.innerHTML = "Has aprobado" + nombre + "Tu nota es: " + notaFinal;
         divResultado.style.backgroundColor = "green";
-        divResultado.innerHTML = "Has Aprobado, " + nombre + ". Tu nota es " + notaFinal;
     }
-    else{
+
+    else {
+        divResultado.innerHTML = " has Suspendido" + nombre + "Tu nota es: " + notaFinal;
         divResultado.style.backgroundColor = "red";
-        divResultado.innerHTML = "Has suspendido, " + nombre ". Tu nota es " + notaFinal;
     }
 }
+
 function calcularMedia(valor1, valor2) {
-    return (parseInt(valor1) + parseInt(valor2))/2;
+    return (parseInt(valor1) + parseInt(valor2)) / 2;
 }
